@@ -3,7 +3,7 @@ find_package(CEFLib REQUIRED) # our own script
 
 
 ## Use CEF ################################################
-list(APPEND CMAKE_MODULE_PATH "${CEF_ROOT}/cmake")
+list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 find_package(CEF REQUIRED)
 
 print_cef_config()
